@@ -1,4 +1,4 @@
-uuid: aaf9f49f-4aa5-4591-9067-9add3f650d3d
+uuid: 9278b4fa-89a4-4c1e-a136-9c08cbb1c618
 langcode: en
 status: true
 dependencies:
@@ -9,6 +9,7 @@ dependencies:
     - contact
     - file
     - filter
+    - media
     - search
     - shortcut
     - system
@@ -28,3 +29,4 @@ permissions:
   - 'search content'
   - 'skip comment approval'
   - 'use text format basic_html'
+  - 'view media'

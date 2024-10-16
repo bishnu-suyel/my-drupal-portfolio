@@ -1,4 +1,4 @@
-uuid: bdffe9dc-7db2-4b4f-b9c4-1a9f2fe49861
+uuid: e47604fe-6612-4b87-b31f-f81bee8c1e23
 langcode: en
 status: true
 dependencies:
@@ -6,8 +6,6 @@ dependencies:
     - field.field.node.article.body
     - field.field.node.article.comment
     - field.field.node.article.field_image
-    - field.field.node.article.field_lead
-    - field.field.node.article.field_my_email
     - field.field.node.article.field_tags
     - image.style.thumbnail
     - node.type.article
@@ -25,7 +23,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 3
+    weight: 2
     region: content
     settings:
       rows: 9
@@ -35,43 +33,27 @@ content:
     third_party_settings: {  }
   comment:
     type: comment_default
-    weight: 9
+    weight: 20
     region: content
     settings: {  }
     third_party_settings: {  }
   created:
     type: datetime_timestamp
-    weight: 6
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
   field_image:
     type: image_image
-    weight: 2
+    weight: 1
     region: content
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-  field_lead:
-    type: string_textfield
-    weight: 1
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  field_my_email:
-    type: email_default
-    weight: 26
-    region: content
-    settings:
-      placeholder: ''
-      size: 60
-    third_party_settings: {  }
   field_tags:
     type: entity_reference_autocomplete_tags
-    weight: 4
+    weight: 3
     region: content
     settings:
       match_operator: CONTAINS
@@ -81,27 +63,27 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 10
+    weight: 30
     region: content
     settings: {  }
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    weight: 7
+    weight: 15
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 11
+    weight: 120
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    weight: 8
+    weight: 16
     region: content
     settings:
       display_label: true
