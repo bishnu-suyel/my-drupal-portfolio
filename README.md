@@ -75,7 +75,7 @@ lando drush en jsonapi -y
 Access the content through the API at a URL like:
 
 ```bash
-http://your-drupal-site.com/jsonapi/node/home
+http://my-drupal-portfolio.lndo.site/jsonapi/node/home
 ```
 
 ### Step 8: Launch the React Frontend
