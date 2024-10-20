@@ -26,8 +26,6 @@ class ContactFormController extends ControllerBase
             return new JsonResponse(['error' => 'All fields are required.'], Response::HTTP_BAD_REQUEST);
         }
 
-        // Optionally: Save to database or send an email
-        // For example, you could use the MailManager service to send an email
 
         // Return a success response
         return new JsonResponse(['status' => 'success', 'message' => 'Your message has been sent.']);
